@@ -82,12 +82,12 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private void Walk()
     {
-        anim.SetFloat("Blend", 0.5f, 0.1f, Time.deltaTime);
+        anim.SetFloat("Blend", 1, 0.1f, Time.deltaTime);
     }
     private void Jump()
     {
         velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
-        anim.SetFloat("Blend", 1, 0.1f, Time.deltaTime);
+        anim.SetFloat("Blend", 2, 0.1f, Time.deltaTime);
     }
 }
 
